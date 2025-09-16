@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Kenangan - Jakastra Official</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Album Kenangan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Kenangan di pesantren</h1>
+            <p>Mengabadikan setiap momen berharga dalam hidup dipesantren Al-Falah putak</p>
+            <a href="#gallery" class="btn-gradient">Jelajahi Galeri</a>
+        </div>
+    </section>
+    
+    <!-- Filter Section -->
+    <section class="filter-section" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="mb-4">Filter Kategori</h2>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="dipondok">Di pondok</button>
+                    <button class="filter-btn" data-filter="teman">Jalan-Jalan</button>
+                    <button class="filter-btn" data-filter="perjalanan">Mengaji</button>
+                    <button class="filter-btn" data-filter="sekolah">Sekolah</button>
+                    <button class="filter-btn" data-filter="olahraga">Olahraga</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Galeri Kenangan</h2>
+            <div class="row gallery-container" id="galleryContainer">
+                <!-- Gallery items will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Jalur Kenangan</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2024 - Bukit Besak</h4>
+                        <p>Tawa dan langkah bersatu, menembus kabut pagi di Bukit Batu Besak. Setiap tanjakan adalah cerita, setiap puncak adalah saksi persahabatan kita. Lebih dari sekadar mendaki, ini adalah perjalanan menemukan kekuatan dalam kebersamaan, dihiasi pemandangan alam yang tak terlupakan. Momen ini akan selalu kita kenang, bukan hanya sebagai album foto, tapi sebagai bukti eratnya ikatan kita.</p>
+                        <small class="text-muted">Desember 2024</small>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2025 - Bukit Batu Putri</h4>
+                        <p>Di Bukit Batu Putri, kita tidak hanya mendaki bukit, tapi juga merangkai cerita. Setiap langkah yang terjal, tawa yang pecah, dan kelelahan yang kita bagi bersama adalah bagian dari babak baru dalam buku persahabatan kita. Pemandangan indah di puncak adalah hadiah, namun perjalanan bersamamu adalah segalanya. Album ini bukan sekadar koleksi foto, melainkan bukti nyata bahwa pertemanan kita lebih kuat dan berharga dari pemandangan apa pun. Inilah kita, di mana setiap momen adalah kenangan yang takkan pudar.</p>
+                        <small class="text-muted">Desember 2025</small>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2025 - Wisuda</h4>
+                        <p>Setelah menyelesaikan perjuangan panjang di pondok, kami berada di titik perpisahan yang terasa begitu nyata. Ini adalah momen bersejarah di mana kami harus memulai babak baru dalam hidup. Meski harus berpisah dan menempuh jalan yang berbeda, janji "Eratkan persaudaraan di dalam perbedaan" akan selalu menjadi pegangan. Semua cerita, tawa, dan tangis yang kita bagi adalah bekal tak ternilai untuk melangkah. Ini bukan akhir, melainkan awal dari perjuangan sejati untuk meraih mimpi.</p>
+                        <small class="text-muted">September 2025</small>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2021/2025 - Momen-Momen Kocak</h4>
+                        <p>Di balik semua foto penuh kesan, ada juga momen-momen yang super kocak. Mulai dari ekspresi muka absurd saat difoto, salah tingkah di depan kamera, sampai hal-hal konyol yang cuma kita yang tahu. Ini bukan cuma album foto, tapi juga arsip rahasia tawa-tawa terbaik kita. Mengingatnya saja sudah bikin senyum-senyum sendiri!.</p>
+                        <small class="text-muted">Maret 2021</small>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-5" id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="about/IMG-20230428-WA0001.jpg" alt="About" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                    <h2 class="mb-4">Tentang Album Ini</h2>
+                    <p>Album ini bukan hanya kumpulan gambar yang dicetak. Lebih dari itu, ia adalah sebuah pengingat fisik yang merekam waktu, tempat, dan perasaan yang telah kita bagi. Di setiap halaman, ada cerita yang tak terucapkan dan tawa yang tak terhitung yang hanya kita yang tahu.</p>
+                    <p>Album ini membuktikan bahwa kenangan terbaik tidak hanya tersimpan di dalam memori, melainkan juga diciptakan bersama-sama. Setiap foto di dalamnya adalah bukti nyata dari momen-momen berharga yang telah kita lalui.</p>
+                    <a href="#" class="btn-gradient mt-3">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="footer-widget">
+                        <h5>Album Kenangan</h5>
+                        <p>Mengabadikan setiap momen berharga dalam hidup untuk dikenang selamanya.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                            <a href="#" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-twitter"></i></a>
+                            <a href="#" data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="footer-widget">
+                        <h5>Link Cepat</h5>
+                        <ul>
+                            <li data-aos="fade-right" data-aos-delay="400"><a href="#home">Beranda</a></li>
+                            <li data-aos="fade-right" data-aos-delay="500"><a href="#gallery">Galeri</a></li>
+                            <li data-aos="fade-right" data-aos-delay="600"><a href="#timeline">Timeline</a></li>
+                            <li data-aos="fade-right" data-aos-delay="700"><a href="#about">Tentang</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-left" data-aos-delay="400">
+                    <div class="footer-widget">
+                        <h5>Hubungi Kami</h5>
+                        <ul>
+                            <li data-aos="fade-left" data-aos-delay="500"><i class="fas fa-envelope me-2"></i>Jakastraofficial12@gmail.com</li>
+                            <li data-aos="fade-left" data-aos-delay="600"><i class="fas fa-phone me-2"></i>+62 857 7317 2782</li>
+                            <li data-aos="fade-left" data-aos-delay="700"><i class="fas fa-map-marker-alt me-2"></i>Sumatra Selatan, Indonesia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="800">
+                <p class="mb-0">&copy; 2025 Jakastra Official. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <img id="modalImage" src="" alt="" class="img-fluid">
+                    <div class="modal-caption">
+                        <h4 id="modalTitle"></h4>
+                        <p id="modalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
